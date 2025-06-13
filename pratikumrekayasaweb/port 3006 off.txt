@@ -1,0 +1,14 @@
+✅ 1. Menghentikan Proses yang Menggunakan Port Tertentu
+Misalnya kamu ingin “menghapus” penggunaan port 3306:
+
+buka cmd rund adminis
+a. Cek dulu proses yang pakai port itu:
+
+netstat -aon | findstr :3306
+Misalnya hasilnya menunjukkan PID: 1234
+
+b. Matikan proses tersebut:
+
+
+taskkill /PID 1234 /F
+⚠️ Hati-hati, jangan matikan proses sistem atau proses penting.
