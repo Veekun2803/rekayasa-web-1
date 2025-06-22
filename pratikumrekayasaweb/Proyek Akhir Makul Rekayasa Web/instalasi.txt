@@ -1,0 +1,39 @@
+
+
+# Generate JWT secret
+php artisan jwt:secret
+
+# Jalankan migrasi
+php artisan migrate
+
+# Seeder (optional)
+php artisan db:seed
+
+Endpoint API:
+Authentication:
+
+POST /auth/register - Registrasi user
+POST /auth/login - Login user
+POST /auth/logout - Logout user
+GET /auth/me - Get user info
+
+Mahasiswa:
+
+POST /mahasiswa/create
+GET /mahasiswa/read
+PUT /mahasiswa/update/{id}
+DELETE /mahasiswa/delete/{id}
+
+Dosen:
+
+POST /dosen/create
+GET /dosen/read
+PUT /dosen/update/{id}
+DELETE /dosen/delete/{id}
+
+Makul:
+
+POST /makul/create
+GET /makul/read
+PUT /makul/update/{id}
+DELETE /makul/delete/{id}
